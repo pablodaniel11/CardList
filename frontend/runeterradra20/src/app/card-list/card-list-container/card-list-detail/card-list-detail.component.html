@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<jw-modal id="cardDetail">
+
+    <div *ngIf="cardInput" id="popup" class="active" >
+        <div id="x">
+            <a (click)="closeModal('cardDetail')">  + </a>
+        </div>
+       <!-- <img class="imageBackground" [src]="cardInput.assets[0].fullAbsolutePath" alt={{cardInput.name}}> --> 
+    
+
+        <div class="elements" [style.background-image]="'url('+ cardInput.assets[0].fullAbsolutePath + ')'" >
+            <h2 class="centerTitle"> {{cardInput.name}}</h2>
+
+            <div class="tooltip">
+                <img class="imageRegion " *ngIf="region" [src]="region.iconAbsolutePath" alt={{region.name}}>
+        
+                <span class="tooltiptext" *ngIf="region">{{region.name}}</span>
+              </div>
+
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+            </style>
+
+
+            
+
+
+            <div class="elementspopup"> 
+                
+
+                
+               
+                <p> Ataque: {{cardInput.attack}}</p>
+                <p> Coste: {{cardInput.cost}}</p>
+                <p> Salud: {{cardInput.health}}</p>
+                <p> Descripcion: {{cardInput.description}} </p>
+                <p> Flavor Text: {{cardInput.flavorText}}</p>   
+         </div>
+        </div>
+
+    </div>
+</jw-modal>

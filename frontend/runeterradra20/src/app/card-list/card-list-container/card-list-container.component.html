@@ -1,0 +1,14 @@
+<div class="container" id="blur" infiniteScroll [infiniteScrollDistance]="2" (scrolled)="onScrollEnd()">
+
+
+    <app-card-list-item (click)="onToggleDialogBox(card)" id=" photos" *ngFor="let card of list" [card]="card">
+
+    </app-card-list-item>
+    
+    <app-card-list-detail [cardInput]="cardTemp" id="blur" class="active">
+
+    </app-card-list-detail>
+
+</div>
+
+<app-card-list-detail></app-card-list-detail>

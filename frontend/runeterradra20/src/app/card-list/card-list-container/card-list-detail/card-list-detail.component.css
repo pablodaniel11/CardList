@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.imageBackground 
+{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  opacity: 1;
+  border-radius: 25px;
+}
+
+.imageRegion 
+{
+  width: 120px;
+  height: 120px;
+}
+
+.containerPopUp 
+{
+  position: relative;
+  width: 100%;
+  min-height: 100hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  margin: 0 auto;
+}
+
+.containerPopUp#blur.active 
+{
+  filter: blur(20px);
+}
+
+.containerPopUp .carta 
+{
+  position: relative;
+  max-width: 800px;
+}
+/*display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: auto;
+  */
+h2 
+{
+  
+  position: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 290px;
+  color: white;
+  font-size: 24px;
+}
+
+.containerPopUp .carta .img {
+  margin-top: 5px auto;
+  max-width: 100%;
+  min-width: 20%;
+  max-height: 100%;
+  min-width: 20%;
+  
+  display: block;
+}
+
+
+a 
+{
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 41px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: rotate(45deg);
+
+}
+
+textbox {
+  background-color: rgba(153, 102, 102, 0.2);
+}
+/*display: grid;
+grid-template-columns: repeat(auto-fill, minmax(225px, 2fr));
+grid-auto-rows: auto;
+*/
+p 
+{
+  
+  position: center;
+  padding: 10px 30px;
+  width: 100%;
+  display: block;
+  margin-left: 10px auto;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#popup 
+{
+  position: absolute;
+  top: 0%;
+  margin-top: 35mm;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 650px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.center 
+{
+  margin-top: -30px;
+  position: absolute;
+  left: 45%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.centerTitle
+{
+  
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#popup.active 
+{
+  top: 40%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.elementspopup {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(225px, 4fr));
+  grid-auto-rows: auto;
+  gap: 5px;
+  background-color: hsla(89, 43%, 51%, 0.3); 
+  border-radius: 10px;
+}
+
+.elements{
+  /* background: url(http://dd.b.pvp.net/1_0_0/set1/en_us/img/cards/01NX023-full.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 10px;
+
+}
