@@ -25,7 +25,7 @@
                 <p class = "attack"> Ataque: {{cardInput.attack}}</p>
                 <p class = "defense"> Coste: {{cardInput.cost}}</p>
                 <p class = "healt"> Salud: {{cardInput.health}}</p>
-                <p class = "description"> Descripcion: {{cardInput.description}} </p>
+                <p class = "description" [innerHTML]="cardInput.description"> Descripcion: {{cardInput.description}} </p>
                 <p class = "flavortext"> Flavor Text: {{cardInput.flavorText}}</p>   
          </div>
         </div>
